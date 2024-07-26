@@ -1,0 +1,79 @@
+﻿@model Employee
+@{
+	ViewData["Title"] = "Create a new Employee Profile";
+}
+
+<h2>Create Employee</h2>
+
+<form method="post">
+	<div class="col-md-6">
+		
+		<div class="form-group"> 
+			<label class="control-label" asp-for="FirstName"></label>
+			<input class="form-control" asp-for="FirstName" />
+			<span class="text-danger" asp-validation-for="FirstName"></span>
+		</div>
+		
+		<div class="form-group">
+			<label class="control-label" asp-for="LastName"></label>
+			<input class="form-control" asp-for="LastName" />
+			<span class="text-danger" asp-validation-for="LastName"></span>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label" asp-for="Email"></label>
+			<input class="form-control" asp-for="Email" />
+			<span class="text-danger" asp-validation-for="Email"></span>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label" asp-for="DateStart"></label>
+			<input class="form-control" asp-for="DateStart" />
+			<span class="text-danger" asp-validation-for="DateStart"></span>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label" asp-for="DateEnd"></label>
+			<input class="form-control" asp-for="DateEnd" />
+			<span class="text-danger" asp-validation-for="DateEnd"></span>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label" asp-for="DateOfBirth"></label>
+			<input class="form-control" asp-for="DateOfBirth" />
+			<span class="text-danger" asp-validation-for="DateOfBirth"></span>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label" asp-for="YearsOFExperience"></label>
+			<input class="form-control" asp-for="YearsOFExperience" />
+			<span class="text-danger" asp-validation-for="YearsOFExperience"></span>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label" asp-for="JobTitle"></label>
+			<input class="form-control" asp-for="JobTitle" />
+			<span class="text-danger" asp-validation-for="JobTitle"></span>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label" asp-for="JobDescription"></label>
+			<input class="form-control" asp-for="JobDescription" />
+			<span class="text-danger" asp-validation-for="JobDescription"></span>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label" asp-for="FullTimeOrHalfTime"></label>
+			<input class="form-control" asp-for="FullTimeOrHalfTime" />
+			<span class="text-danger" asp-validation-for="FullTimeOrHalfTime"></span>
+		</div>
+
+		<div class="form-group">
+			<input class="btn btn-primary" type="submit" value="Add Employee"
+		</div>
+	</div>
+
+	@section Scripts {
+		<partial name="_ValidationScriptsPartial" />
+	}
+</form>
