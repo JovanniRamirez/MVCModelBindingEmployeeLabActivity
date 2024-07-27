@@ -29,5 +29,11 @@ namespace MVCModelBindingEmployee.Controllers
 			//return view
 			return View();
 		}
+
+		[HttpGet]
+		public IActionResult UserProfile()
+		{
+			return View();
+		}
 	}
 }
