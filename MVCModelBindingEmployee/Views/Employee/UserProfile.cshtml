@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "User Profile";
+}
+
+<div>
+    <header>
+        <h1>Employee Profiles</h1>
+        <div class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </div>
+
+    </header>
+    <main>
+        <section id="employee-list">
+            <!-- Display a list of employees -->
+            <!-- Each employee should link to their detailed profile -->
+        </section>
+        <section id="employee-details">
+            <!-- Display detailed information about the selected employee -->
+        </section>
+    </main>
+</div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <!-- Employee List -->
+            <ul class="list-group">
+                <li class="list-group-item"><a href="#employee1">John Doe</a></li>
+                <li class="list-group-item"><a href="#employee2">Jane Smith</a></li>
+                <!-- Add more employees here -->
+            </ul>
+        </div>
+        <div class="col-md-8">
+            <!-- Employee Details -->
+            <div id="employee1">
+                <h2>John Doe</h2>
+                <p>Position: Software Engineer</p>
+                <p>Department: Engineering</p>
+                <p>Contact: john.doe@example.com</p>
+                <!-- Add more details as needed -->
+            </div>
+            <div id="employee2">
+                <h2>Jane Smith</h2>
+                <p>Position: Product Manager</p>
+                <p>Department: Product</p>
+                <p>Contact: jane.smith@example.com</p>
+                <!-- Add more details as needed -->
+            </div>
+            <!-- Add more employee profiles here -->
+        </div>
+    </div>
+</div>
