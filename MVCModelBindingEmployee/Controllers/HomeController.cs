@@ -28,5 +28,10 @@ namespace MVCModelBindingEmployee.Controllers
 		{
 			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
 		}
+
+        public IActionResult Printer3DList()
+		{
+			return View();
+		}
 	}
 }
